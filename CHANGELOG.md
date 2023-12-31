@@ -37,3 +37,4 @@ All notable changes to `BlamableLaravel` will be documented in this file
 ### Removed
 
 ### Depricated
+
