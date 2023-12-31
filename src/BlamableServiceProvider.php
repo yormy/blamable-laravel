@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 
 class BlamableServiceProvider extends ServiceProvider
 {
+    const CONFIG_FILE = __DIR__.'/../config/blamable.php';
+
     public function boot()
     {
         $this->publish();
@@ -14,14 +16,14 @@ class BlamableServiceProvider extends ServiceProvider
     public function register()
     {
         // ...
-        $this->mergeConfigFrom('blamable', 'blamable');
+        $this->mergeConfigFrom(self::CONFIG_FILE, 'blamable');
     }
 
     private function publish(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                'blamable' => config_path('blamable.php'),
+                self::CONFIG_FILE => config_path('blamable.php'),
             ], 'config');
         }
     }
