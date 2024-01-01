@@ -30,7 +30,7 @@ NOTE: If you make it encrypted
 ```$table->string('blamable_ip_hash', 100)->nullable();```
 
 ### blamable_user_agent
-```$table->string('blamable_ip', 200)->nullable();```
+```$table->string('blamable_user_agent', 200)->nullable();```
 NOTE: If you make it encrypted
 ```$table->string('blamable_ip', 1024)->nullable();```
 
