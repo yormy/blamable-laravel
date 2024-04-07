@@ -1,0 +1,46 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Yormy\\\\BlamableLaravel\\\\Services\\\\Migrator\\:\\:run\\(\\) has parameter \\$after with no type specified\\.$#"
+			count: 1
+			path: src/Services/Migrator.php
+
+		-
+			message: "#^Method Yormy\\\\BlamableLaravel\\\\Services\\\\Migrator\\:\\:run\\(\\) has parameter \\$table with no type specified\\.$#"
+			count: 1
+			path: src/Services/Migrator.php
+
+		-
+			message: "#^Parameter \\#2 \\$array of function array_key_exists expects array, mixed given\\.$#"
+			count: 9
+			path: src/Services/Migrator.php
+
+		-
+			message: "#^Method Yormy\\\\BlamableLaravel\\\\Services\\\\Resolvers\\\\FingerprintResolver\\:\\:get\\(\\) should return string\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Services/Resolvers/FingerprintResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$key of method Illuminate\\\\Http\\\\Request\\:\\:get\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Services/Resolvers/FingerprintResolver.php
+
+		-
+			message: "#^Cannot call method ip\\(\\) on mixed\\.$#"
+			count: 1
+			path: src/Services/Resolvers/IpResolver.php
+
+		-
+			message: "#^Method Yormy\\\\BlamableLaravel\\\\Services\\\\Resolvers\\\\UserAgentResolver\\:\\:getFullAgent\\(\\) should return string but returns array\\|string\\|null\\.$#"
+			count: 1
+			path: src/Services/Resolvers/UserAgentResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$propertyName of method Jenssegers\\\\Agent\\\\Agent\\:\\:version\\(\\) expects string, bool\\|string given\\.$#"
+			count: 2
+			path: src/Services/Resolvers/UserAgentResolver.php
+
+		-
+			message: "#^Method Yormy\\\\BlamableLaravel\\\\Services\\\\Resolvers\\\\UserResolver\\:\\:get\\(\\) should return Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable but returns Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\|null\\.$#"
+			count: 1
+			path: src/Services/Resolvers/UserResolver.php
