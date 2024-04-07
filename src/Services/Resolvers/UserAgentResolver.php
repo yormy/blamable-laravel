@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace Yormy\BlamableLaravel\Services\Resolvers;
 
 use Illuminate\Http\Request;
@@ -10,11 +13,10 @@ class UserAgentResolver
     {
         $agent = new Agent();
         $platform = $agent->platform();
-        $userAgent = $platform . " ". $agent->version($platform);
+        $userAgent = $platform.' '.$agent->version($platform);
 
         $browser = $agent->browser();
-        $userAgent .= $browser ." " . $agent->version($browser);
-        return $userAgent;
+        return $userAgent . $browser.' '.$agent->version($browser);
     }
 
     public static function getFullAgent(Request $request): string

@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Yormy\BlamableLaravel\Services;
 
 class Migrator
 {
-    public static function run($table, $after = null)
+    public static function run($table, $after = null): void
     {
         $fields = config('blamable.fields', []);
         $encryptedFields = config('blamable.encryption', []);

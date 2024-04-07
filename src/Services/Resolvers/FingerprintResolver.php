@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Yormy\BlamableLaravel\Services\Resolvers;
 
 use Illuminate\Http\Request;
@@ -11,8 +13,6 @@ class FingerprintResolver
         if (! $request) {
             return null;
         }
-        $fingerprint = $request->get(config('blamable.request_fields.browser_fingerprint', 'browser_fingerprint'));
-
-        return $fingerprint;
+        return $request->get(config('blamable.request_fields.browser_fingerprint', 'browser_fingerprint'));
     }
 }

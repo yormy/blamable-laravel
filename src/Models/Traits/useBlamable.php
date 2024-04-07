@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Yormy\BlamableLaravel\Models\Traits;
 
 use Illuminate\Support\Facades\Crypt;
@@ -11,9 +13,9 @@ use Yormy\BlamableLaravel\Services\Resolvers\UserResolver;
 
 trait useBlamable
 {
-    public static function bootBlamable()
+    public static function bootBlamable(): void
     {
-        static::saving(function ($model) {
+        static::saving(function ($model): void {
             if (! config('blamable.enabled')) {
                 return;
             }
@@ -45,11 +47,10 @@ trait useBlamable
             if (array_key_exists('user_agent', $fields)) {
                 $this->handleUserAgent($model, $encryptedFields, $hashedFields);
             }
-
         });
     }
 
-    private static function handleIpAddress($model, $encryptedFields, $hashedFields)
+    private static function handleIpAddress($model, $encryptedFields, $hashedFields): void
     {
         $ipAddress = IpResolver::get();
         $model->blamable_ip = $ipAddress;
@@ -63,7 +64,7 @@ trait useBlamable
         }
     }
 
-    private static function handleUserAgent($model, $encryptedFields, $hashedFields)
+    private static function handleUserAgent($model, $encryptedFields, $hashedFields): void
     {
         $userAgent = UserAgentResolver::getFullAgent(request());
         $model->blamable_user_agent = $userAgent;

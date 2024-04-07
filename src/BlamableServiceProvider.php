@@ -1,19 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Yormy\BlamableLaravel;
 
 use Illuminate\Support\ServiceProvider;
 
 class BlamableServiceProvider extends ServiceProvider
 {
-    const CONFIG_FILE = __DIR__.'/../config/blamable.php';
+    public const CONFIG_FILE = __DIR__.'/../config/blamable.php';
 
-    public function boot()
+    public function boot(): void
     {
         $this->publish();
     }
 
-    public function register()
+    public function register(): void
     {
         // ...
         $this->mergeConfigFrom(self::CONFIG_FILE, 'blamable');
