@@ -13,6 +13,7 @@ class FingerprintResolver
         if (! $request) {
             return null;
         }
+
         return $request->get(config('blamable.request_fields.browser_fingerprint', 'browser_fingerprint'));
     }
 }
