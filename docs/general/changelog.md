@@ -1,21 +1,16 @@
 # Changelog
 
-All notable changes to `BlamableLaravel` will be documented in this file
-
-[TODO ITEMS](./docs/todo.md)
+All notable changes to `guidelines` will be documented in this file
 
 ## [Unreleased] 
 [branch]
-
-### Added
+- what you are currently working on
  
-## [0.0.1] - 2020-11-24
+
+## [initial release]
 
 
-## 0.0.0 - 202X-XX-XX
-
-- initial release
-
+```
 ##################################################################
 ########################## TEMPLATE ##############################
 ##################################################################
@@ -37,4 +32,4 @@ All notable changes to `BlamableLaravel` will be documented in this file
 ### Removed
 
 ### Depricated
-
+```

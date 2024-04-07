@@ -1,43 +1,23 @@
-# InvalidConfigException
+# Blamable
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/yormy/blamable-laravel.svg?style=flat-square)](https://packagist.org/packages/yormy/geo)
+[![Total Downloads](https://img.shields.io/packagist/dt/yormy/blamable-laravel.svg?style=flat-square)](https://packagist.org/packages/yormy/geo)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/yormy/InvalidConfigException.svg?style=flat-square)](https://packagist.org/packages/yormy/InvalidConfigException)
-[![Total Downloads](https://img.shields.io/packagist/dt/yormy/InvalidConfigException.svg?style=flat-square)](https://packagist.org/packages/yormy/InvalidConfigException)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/facade/ignition/run-php-tests?label=Tests)
-![Alt text](./coverage.svg)
+|          |                                                               |
+|----------|---------------------------------------------------------------|
+| Security | ![Test Coverage](badges/insights_security.svg)                |
+| Testing  | ![Test Coverage](badges/test_coverage.svg)                    |
+| Style    | ![Style](badges/stan.svg) ![Style](badges/insights_code.svg)  | 
 
 
-## Installation
+# Blamable Laravel
+```Just some handy stuff```
 
-
-You can install the package via composer:
-
-```bash
-composer require yormy/InvalidConfigException
-```
-
-## Testing
-
-``` bash
-composer test
-```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
+# [Click for Documentation](https://yormy.github.io/blamable-laravel/)
 
 ## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## Credits
-
-- [Yormy](https://gitlab.com/yormy)
-- [All Contributors](../../contributors)
+[Report security issues](https://yormy.github.io/blamable-laravel/general/report_security.html)
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File]((https://yormy.github.io/blamable-laravel/general/license.html) for more information.
+
