@@ -2,7 +2,6 @@
 
 namespace Yormy\BlamableLaravel\Models\Traits;
 
-
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Hash;
 use Yormy\BlamableLaravel\Services\Resolvers\FingerprintResolver;
@@ -15,7 +14,7 @@ trait useBlamable
     public static function bootBlamable()
     {
         static::saving(function ($model) {
-            if (!config('blamable.enabled')) {
+            if (! config('blamable.enabled')) {
                 return;
             }
 
@@ -63,7 +62,6 @@ trait useBlamable
             $model->blamable_ip_hash = Hash::make($ipAddress);
         }
     }
-
 
     private static function handleUserAgent($model, $encryptedFields, $hashedFields)
     {

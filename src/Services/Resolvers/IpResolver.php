@@ -1,4 +1,5 @@
 <?php
+
 namespace Yormy\BlamableLaravel\Services\Resolvers;
 
 use Illuminate\Http\Request;
@@ -17,5 +18,4 @@ class IpResolver
 
         return $request->ip();
     }
-
 }

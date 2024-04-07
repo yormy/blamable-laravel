@@ -10,7 +10,6 @@ class Migrator
         $encryptedFields = config('blamable.encryption', []);
         $hashedFields = config('add_hash', []);
 
-
         if (array_key_exists('user_id', $fields)) {
             $idColumn = $table->unsignedBigInteger('blamable_user_id')->nullable();
             if ($after) {
@@ -23,7 +22,6 @@ class Migrator
             $table->string('blamable_user_type')->nullable()->after($after);
             $after = 'blamable_user_type';
         }
-
 
         if (array_key_exists('ip_address', $fields)) {
             if (array_key_exists('ip_address', $encryptedFields)) {

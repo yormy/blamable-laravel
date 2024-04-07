@@ -34,11 +34,11 @@ return [
     */
 
     'fields' => [
-            'user_id',
-            'user_type',
-            'ip_address',
-            'user_agent',
-            'browser_fingerprint',
+        'user_id',
+        'user_type',
+        'ip_address',
+        'user_agent',
+        'browser_fingerprint',
     ],
 
     /*
@@ -56,7 +56,7 @@ return [
     */
 
     'encryption' => [
-        'ip_address'
+        'ip_address',
     ],
 
     /*
@@ -74,7 +74,7 @@ return [
     */
 
     'add_hash' => [
-        'ip_address'
+        'ip_address',
     ],
 
     /*
@@ -92,8 +92,7 @@ return [
     */
 
     'request_fields' => [
-        'browser_fingerprint' => 'browser_fingerprint'
-    ]
-
+        'browser_fingerprint' => 'browser_fingerprint',
+    ],
 
 ];
